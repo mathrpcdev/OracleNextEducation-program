@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function jumpLine() {
+        document.write("<br><br>");
+    }
+
+
+    function display(phrase) {
+        document.write(phrase);
+        jumpLine();
+    }
+
+    /* function raffle(n) {
+         return Math.round(Math.random() * n);
+     }*/
+
+    var thoughtNumber = Math.round(Math.random() * 10);
+    console.log();
+    var tentativas = 1;
+
+    while (tentativas <= 3) {
+        var guessing = parseInt(prompt("Guess a number!"));
+        if (guessing == thoughtNumber) {
+            display("You got it right! The thought number was " + thoughtNumber);
+            break;
+
+        }
+        else {
+            display("You missed");
+            tentativas++
+        }
+        // tentativas++
+
+
+    }
+    display("FIM");
+
+
+
+
+</script>

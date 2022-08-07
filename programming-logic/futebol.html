@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function jumpLine() {
+        document.write("<br><br>");
+    }
+
+    function display(phrase) {
+        document.write(phrase);
+        jumpLine();
+    }
+
+
+    var victories = parseInt(prompt("Input the number of victories"));
+    var draws = parseInt(prompt("Input the number of draws."));
+
+
+    var scoreboard = (victories * 3) + draws;
+    display("The total point value is: " + scoreboard);
+
+    if (scoreboard > 28) {
+        display("Your soccer team are better than the last yerar");
+    }
+
+
+    if (scoreboard < 28);
+    display("Your soccer team are worse than the last yerar");
+
+    if (scoreboard == 28) {
+        display("Your team are the same as the last year");
+    }
+
+    display("FIM");
+</script>

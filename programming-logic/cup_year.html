@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+
+    function jumpLine() {
+        document.write("<br>");
+    }
+
+    function display(phrase) {
+        document.write(phrase);
+        jumpLine();
+    }
+
+    /* function raffle() {
+         
+         return Math.round(Math.random() * 10);
+     }*/
+
+    var limite = parseInt(prompt("Digite um ano"))
+    var anoCopa = 1930;
+
+    while(anoCopa <= limite){
+       display("teve compa em " + anoCopa);
+        anoCopa = anoCopa + 4;
+    }
+   
+   display("FIM");
+</script>
